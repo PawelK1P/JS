@@ -1,0 +1,61 @@
+<html>
+<body>
+<div style="color:green;font-size:41px;">
+ <script language="JavaScript">
+var b_kar=prompt("b=","");
+var b_kar=parseFloat(b_kar);
+var c_kar=prompt("c=","");
+var c_kar=parseFloat(c_kar);
+
+var a_kar1;
+a_kar1=(Math.pow(c_kar,2))-(Math.pow(b_kar,2));
+var a_kar2;
+a_kar2=(Math.sqrt(a_kar1));
+
+var obwod_kar;
+obwod_kar=a_kar2+b_kar+c_kar;
+
+
+
+var pole_kar;
+pole_kar=(a_kar2*b_kar)/2;
+
+var h1_kar;
+h1_kar=a_kar2;
+
+var h2_kar;
+h2_kar=b_kar;
+
+var h3_kar;
+h3_kar=(a_kar2*b_kar)/2;
+
+
+var alfa_kar;
+alfa_kar=Math.asin(a_kar2/c_kar)*180/Math.PI;
+
+var beta_kar;
+beta_kar=90-alfa_kar;
+
+
+var gama_kar;
+gama_kar=90;
+
+
+var sin_alfa;
+sin_alfa=a_kar2/c_kar;
+
+var cos_alfa;
+cos_alfa=b_kar/c_kar;
+
+var tg_alfa;
+tg_alfa=a_kar2/b_kar;
+
+var ctg_alfa;
+ctg_alfa=b_kar/a_kar2;
+document.write("B wynosi "+b_kar+" <br> C wynosi "+c_kar+"<br> A wynosi "+a_kar2.toFixed(3)+"<br> Obwód wynosi "+obwod_kar.toFixed(3)+"<br> Pole wynosi "
++pole_kar.toFixed(3)+"<br> H1 wynosi "+h1_kar+"<br> H2 wynosi "+h2_kar+" <br> H3 wynosi "+h3_kar+"<br> Alfa wynosi "+alfa_kar.toFixed(3)+"°<br> Beta wynosi "+beta_kar.toFixed(3)+"° <br> Gama wynosi "
++gama_kar+"°<br> Sin alfa wynosi "+sin_alfa.toFixed(3)+"<br> Cos alfa wynosi "+cos_alfa+"<br> Tg alfa wynosi "+tg_alfa.toFixed(3)+"<br> Ctg alfa wynosi "+ctg_alfa.toFixed(3)+"<br>");
+ </script>
+</div>
+</body>
+</html> 
