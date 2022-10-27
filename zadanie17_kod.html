@@ -1,0 +1,52 @@
+<Doctype html>
+    <html>
+    <head>
+    <Meta charset="utf-8">
+    <title> Strona zaliczeniowa JS </title>
+     <script language="JavaScript">
+      function okno_zamknij_karmasz()
+     {
+     window.close()
+     }
+     </script>
+    </head>
+    <body>
+    <textarea cols="205" rows="37">
+        <!DOCTYPE html>
+        <head>
+        <title> Użycie fukcji </title>
+        <meta charset="utf-8">
+        </head>
+       <body>
+        <div style="color:navy;font-size:50px;">
+        <script language="JavaScript">
+        var a=parseFloat(prompt("a=",""));
+        var b=parseFloat(prompt("b=",""));
+        function suma_kar(a,b) {
+        return a + b;
+        }
+        function odejmowanie_kar(a,b) {
+        return a - b;
+        }
+        
+        function mnozenie_kar(a,b) {
+        return a * b;
+        }
+        
+        function od_kwadratu_kar(a,b) {
+        return Math.pow(a,2);
+        return Math.pow(b,2);
+        }
+        function reszta_z_dzielenia_a_przez_b_kar(a,b) {
+        return a%b;
+        }
+        document.write("suma="+suma_kar(a,b)+"<br>");
+        document.write("odejmowanie="+odejmowanie_kar(a,b)+"<br>");
+        document.write("mnozenie="+mnozenie_kar(a,b)+"<br>");
+        document.write("kwadraty="+od_kwadratu_kar(a)+" i "+od_kwadratu_kar(b)+"<br>");
+        document.write("reszta z dzielenia="+reszta_z_dzielenia_a_przez_b_kar(a,b)+"<br>");
+       </script>
+       </div>
+       </body>
+       </html>
+    </textarea>

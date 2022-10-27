@@ -1,0 +1,34 @@
+<Doctype html>
+<html>
+<head>
+<Meta charset="utf-8">
+<title> Strona zaliczeniowa JS </title>
+ <script language="JavaScript">
+  function okno_zamknij_karmasz()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols="205" rows="18">
+<html>
+<body>
+<div style="color:green;font-size:41px;">
+ <script language="JavaScript">
+var D_kar1=prompt("D1=","");
+var D_kar2=prompt("D2=","");
+var ilosc_dni;
+var ilosc_sekund;
+ var D_kar1=parseFloat(D_kar1);
+ var D_kar2=parseFloat(D_kar2);
+ ilosc_dni=D_kar1-D_kar2;
+ ilosc_sekund=(ilosc_dni*24)*(60)*(60);
+ 
+ document.write("Ilość sekund wynosi "+ilosc_sekund+"<br>");
+ </script>
+</div>
+</body>
+</html> 
+</textarea>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_karmasz()"/>

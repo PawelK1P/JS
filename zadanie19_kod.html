@@ -1,0 +1,66 @@
+<Doctype html>
+<html>
+<head>
+<Meta charset="utf-8">
+<title> Strona zaliczeniowa JS </title>
+ <script language="JavaScript">
+  function okno_zamknij_karmasz()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols="205" rows="51">
+<html>
+<body>
+<html> 
+<head> 
+<title>
+ Przykład obliczenia pola i obwodu prostokata
+</title>
+ <script language="JavaScript">
+function pole_kar(a_kar,b_kar)
+{
+ a_kar=parseFloat(a_kar)
+ b_kar=parseFloat(b_kar)
+ pole=a_kar*b_kar
+ document.getElementsByName('pole')[0].value=pole.toFixed(2); /* na dokument */
+ alert("Pole="+pole.toFixed(2)+" cm^2"); /*do okna Alert */
+ pokaz1.innerHTML="Pole="+pole.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obwod_kar(a_kar,b_kar)
+{
+ a_kar=parseFloat(a_kar)
+ b_kar=parseFloat(b_kar)
+ obwod=2*a_kar+2*b_kar
+ document.getElementsByName('obwod')[0].value=obwod.toFixed(2);
+ alert("obwod="+obwod.toFixed(2)+" cm");
+ pokaz2.innerHTML="obwod="+obwod.toFixed(2)+"cm";
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole_kar(this.a_kar.value,this.b_kar.value); 
+obwod_kar(this.a_kar.value,this.b_kar.value);return false"> 
+ Podaj a=
+ <input size="6" name="a_kar">
+ Podaj b=
+ <input size="6" name="b_kar">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Pole=
+ <input size="6" name="pole">
+ obwod_kar=
+ <input size="6" name="obwod">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
+</textarea>

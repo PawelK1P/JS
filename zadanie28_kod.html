@@ -1,0 +1,41 @@
+<Doctype html>
+    <html>
+    <head>
+    <Meta charset="utf-8">
+    <title> Strona zaliczeniowa JS </title>
+     <script language="JavaScript">
+      function okno_zamknij_karmasz()
+     {
+     window.close()
+     }
+     </script>
+    </head>
+    <body>
+    <textarea cols="205" rows="27">
+	<html>
+ <head>
+ <script type="text/javascript">
+ function Spodnie(nazwisko_k,imie_k,zawod_k)//początek konstruktora
+{
+this.nazwisko=nazwisko_k;
+this.imie=imie_k;
+this.zawod=zawod_k;
+}//koniec konstruktora
+ Spodnie.prototype.wypisz_karmasz = function () //definicja metody
+ {
+ alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod);
+ };
+var osoba1 = new Spodnie("Kowalski", "Jan", "kierowca"); // nowy obiekt osoba1
+var osoba2 = new Spodnie('Nowak', 'Anna', 'sekretarka');
+osoba1.wypisz_karmasz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+osoba2.wypisz_karmasz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("klient pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>

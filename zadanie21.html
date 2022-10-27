@@ -1,0 +1,50 @@
+<html> 
+<head> 
+<title>
+Zadanie 21
+</title>
+ <script language="JavaScript">
+function m_wynik2(D_liczba,X_liczba)
+{
+ D_liczba=parseFloat(D_liczba)
+ X_liczba=parseFloat(X_liczba)
+ m_wynik1=Math.pow(D_liczba,2)+Math.pow(X_liczba,2)
+ m_wynik2=Math.sqrt(m_wynik1)
+ document.getElementsByName('drabina')[0].value=m_wynik2.toFixed(2); /* na dokument */
+ alert("Drabina="+m_wynik2.toFixed(2)+""); /*do okna Alert */
+ pokaz1.innerHTML="Drabina="+m_wynik2.toFixed(2)+""+"<br>"; /* do tabeli */
+}
+function alfa_kar(D_liczba,X_liczba)
+{
+ D_liczba=parseFloat(D_liczba)
+ X_liczba=parseFloat(X_liczba)
+ alfa_kar=Math.asin(D_liczba/m_wynik2)*180/Math.PI
+ document.getElementsByName('obliczenie_alfa')[0].value=alfa_kar.toFixed(2);
+ alert("Alfa="+alfa_kar.toFixed(2)+"");
+ pokaz2.innerHTML="Alfa"+alfa_kar.toFixed(2)+"";
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie Długości drabiny i kąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="m_wynik2(this.D_liczba.value,this.X_liczba.value); 
+alfa_kar(this.D_liczba.value,this.X_liczba.value);return false"> 
+ Podaj d=
+ <input size="6" name="D_liczba">
+ Podaj x=
+ <input size="6" name="X_liczba">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Drabina=
+ <input size="6" name="drabina">
+ Alfa=
+ <input size="6" name="obliczenie_alfa">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>

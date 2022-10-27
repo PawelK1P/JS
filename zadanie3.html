@@ -1,0 +1,58 @@
+<DOCTYPE html>
+<html>
+<head>
+<Meta charset="utf-8">
+<title> Zadanie 3 </title>
+<script language="JavaScript">
+ function okno_zamknij_karmasz()
+ {
+ window.close()
+ }
+</script>
+</head>
+<body> 
+<ol type="1">
+<h1> <li> Rodzaje okienek: </h1>
+<ul>
+<li> <h3>  Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK </h3>
+<li> <h3> Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną
+następnie do programu. </h3>
+<li> <h3> Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm) </h3>
+</ul>
+<h1> <li> Konwersja zmiennych </h1>
+<h3> Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków dlatego konieczna jest
+konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia. </h3>
+<h1> Rodzaje konwersji zmiennych </h1>
+<ol type="a">
+<h3> <li> <u> parseFloat(zmienna) </u> - konwersja zmiennej do typu float </h3>
+<h3> <li> <u> parseInt(zmienna) </u> - konwersja zmiennej do typu int (liczbowego) </h3>
+<h3> <li> <u> toString(zmienna) </u> - konwersja zmiennej do typu łańcuchowego  </h3>
+</ol>
+<h1> <li> Typy zmiennych w Javascript </h1>
+<ol type="I">
+<h3><li> Number -> Typ liczbowy </h3>
+<ul type="circle">
+<h5><li> zmienna całkowite </h5>
+<h5><li>zmiennoprzecinkowe </h5>
+</ul>
+<h3> <li> String -> Typ tekstowy </h3>
+<h3> <li> Boolea -> Typ logiczny </h3>
+<h3> <li> Null -> Pusta zawartość </h3>
+<h3> <li> Undefined -> Typ niezidentyfikowany </h3>
+<h3> <li> Object -> Obiekt </h3>
+</ol>
+<h1> <li>  Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad: </h1>
+<ol type="I">
+<h3> <li> Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez
+polskich znaków), cyfry oraz "$" i "_". </h3>
+<h2> Przykłady </h2>
+<h4> Poprawne nazwy zmiennych: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz
+Błędne nazwy zmiennych: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz,
+wysokość, imie+nazwisko. </h4>
+<h3> <li> Wielkość liter ma znaczenie.
+Rekord i rekord to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie
+początkujących programistów </h3>
+<h3> <li>  Należy nie używać słów kluczowych JavaScript jako nazw zmiennych. </h3>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_karmasz()"/>
+
+

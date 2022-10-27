@@ -1,0 +1,35 @@
+<Doctype html>
+    <html>
+    <head>
+    <Meta charset="utf-8">
+    <title> Strona zaliczeniowa JS </title>
+     <script language="JavaScript">
+      function okno_zamknij_karmasz()
+     {
+     window.close()
+     }
+     </script>
+    </head>
+    <body>
+    <textarea cols="205" rows="19">
+        <html>
+            <body>
+            <div style="color:green;font-size:41px;">
+             <script language="JavaScript">
+            var x_kar=prompt("Podaj stopien, bym przeliczyl na radian=","");
+            var x_kar=parseFloat(x_kar);
+            var s_kar;
+            s_kar=(Math.PI*x_kar)/180;
+            document.write(+x_kar+"°="+s_kar.toFixed(2)+" radian<br>");
+            
+            var s_kar=prompt("Podaj radian, bym przeliczyl na stopien=","");
+            var x_kar;
+            x_kar=(180*s_kar)/Math.PI;
+            document.write(+s_kar+" radian="+x_kar.toFixed(2)+"<br>");
+            </script>
+            </div>
+            </body>
+            </html>
+            </textarea>
+            </body>
+            </html>

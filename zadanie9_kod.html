@@ -1,0 +1,38 @@
+<Doctype html>
+<html>
+<head>
+<Meta charset="utf-8">
+<title> Strona zaliczeniowa JS </title>
+ <script language="JavaScript">
+  function okno_zamknij_karmasz()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+<textarea cols="205" rows="25">
+<html>
+<body>
+<div style="color:green;font-size:41px;">
+ <script language="JavaScript">
+var D_kar1=prompt("D1=","");
+var G_kar1=prompt("G1=","");
+var D_kar2=prompt("D2=","");
+var G_kar2=prompt("G2=","");
+var dzien1;
+var dzien2;
+var ilosc_sekund;
+var D_kar1=parseFloat(D_kar1);
+var G_kar1=parseFloat(G_kar1);
+var D_kar2=parseFloat(D_kar2);
+var G_kar2=parseFloat(G_kar2);
+dzien1=D_kar1*86400+G_kar1*3600;
+dzien2=D_kar2*86400+G_kar2*3600;
+ilosc_sekund=dzien1-dzien2;
+ document.write("Ilość sekund wynosi "+ilosc_sekund+"<br>");
+ </script>
+</div>
+</body>
+</html> 
+</textarea>
