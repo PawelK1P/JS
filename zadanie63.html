@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="utf-8">
+<div>
+<script type="text/javascript">
+document.write("<font color=green size=6>Menu</font>"+"<br>");
+document.write("<font color=red size=6>1-czerwony</font>"+"<br>");
+document.write("<font color=blue size=6>2-niebieski</font>"+"<br>");
+function obl(x)
+ {
+ if (x==1 || x.toLowerCase()=="czerwony")
+ {
+  pokaz.innerHTML="<font color=red size=7>Wpisałeś kolor czerwony </font>";
+ }
+ 
+ else if (x==2 || x.toLowerCase()=="niebieski")
+ {
+ pokaz.innerHTML="<font color=blue size=1>Wpisałeś kolor niebieski </font>";
+ }
+ else
+ {
+ pokaz.innerHTML="Nie znaleziono koloru";
+ }
+ }
+document.getElementsByName('kolor')[0].value=x.toFixed(2); /* na dokument */ 
+ </script>
+</head>
+<body>
+<form name="formularz" action="..." onsubmit="obl(this.kolor.value);return false">
+<input size="6" name="kolor">
+<input type="submit" value="oblicz">
+</form>
+<table>
+<tr id="pokaz"> </tr>
+</table>
+</div>
+</body>
+</html>
