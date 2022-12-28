@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+
+var x_MAX=prompt("Podaj x_MAX");
+var x_MIN=prompt("Podaj x_MIN");
+var y_MAX=prompt("Podaj y_MAX");
+var y_MIN=prompt("Podaj y_MIN");
+d_kar=Math.sqrt((Math.pow(i,2.0))+(Math.pow(k,2.0)));
+for (var i=x_MAX;i<=x_MIN; i++)
+{
+for (var k=y_MAX; k<=y_MIN; k++)
+{
+d_kar=Math.sqrt(i*i+k*k);
+
+document.write("Punkt ("+i+","+k+") d="+d_kar.toFixed(2)+"<br>");
+
+
+}
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+
