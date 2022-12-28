@@ -1,0 +1,58 @@
+<Doctype html>
+    <html>
+    <head>
+    <Meta charset="utf-8">
+    <title> Strona zaliczeniowa JS </title>
+     <script language="JavaScript">
+      function okno_zamknij_karmasz()
+     {
+     window.close()
+     }
+     </script>
+    </head>
+    <body>
+    <textarea cols="205" rows="44">
+        <!DOCTYPE html>
+        <html lang="pl">
+        <head>
+         <meta charset="utf-8">
+         <title> Przykład użycia pętli </title>
+         <script language="JavaScript">
+         var imie_kar=prompt("Podaj imię");
+         var nazwisko_kar=prompt("Podaj nazwisko");
+         dlugosc_imie_kar=imie_kar.length;
+         dlugosc_nazwisko_kar=nazwisko_kar.length;
+         var a_kar=(dlugosc_nazwisko_kar%4)+5;
+         var b_kar=(dlugosc_imie_kar%6)+20;
+        
+         document.write("A= "+a_kar+" B="+b_kar+"<br>");
+        for(var i=0; i<b_kar;  i++)
+           {
+            document.write("*");
+           }
+        
+        document.write("<br>");
+        
+           for(var q=0; q<a_kar-2; q++)
+           {
+            document.write("*");
+        
+            for(var c=0; c<b_kar-2; c++)
+               {
+                document.write("&nbsp&nbsp");
+               }
+               document.write("*<br>");
+                 
+           }
+        
+           for(var d=0; d<b_kar; d++)
+        {
+          document.write("*");
+        }
+        
+        
+         </script>
+        </head>
+        <body>
+        </body>
+        </html>

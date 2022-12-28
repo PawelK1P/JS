@@ -1,0 +1,67 @@
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+   var l1_t_kar;
+   var l2_t_kar;
+   
+   do {
+       l1_t_kar=prompt("Podaj pierwszą liczbe z przedziału <20,60>");
+       if (l1_t_kar<20)
+       alert("Liczba jest za mała");
+       else if (l1_t_kar>60)
+       alert("Liczba jest za duża")
+   }
+   while (l1_t_kar <20 || l1_t_kar>60)
+       do
+       {
+       l2_t_kar=prompt("Podaj drugą liczbe z przedziału <20,60>");
+           if (l2_t_kar<20)
+       alert("Liczba jest za mała");
+       else if (l2_t_kar>60)
+       alert("Liczba jest za duża")
+       }
+    while(l2_t_kar <20 || l2_t_kar>60);
+   
+   
+   
+    var tekst_kar=prompt("Podaj tekst");
+    var pocz_kar=prompt("Podaj wartość początkową");
+    if (l1_t_kar<l2_t_kar)
+    {
+    for (var i=pocz_kar; i<=100;i++)
+    {
+   if (i%5==0)
+   {
+   document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kar+"<br></p>")
+   }
+   }
+   
+   }
+   
+   else if (l2_t_kar<l1_t_kar)
+    {
+    for (var i=pocz_kar; i>=0;i--)
+    {
+   if (i%5==0)
+   {
+   document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kar+"<br></p>");
+   
+    }
+    }
+   }
+   
+    </script>
+   </head>
+   <body>
+   </body>
+   </html>
+   
+   
+   
+   
+   
+   
+   
+   
+   

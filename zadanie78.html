@@ -1,0 +1,37 @@
+<html>
+<body>
+<style>
+
+
+</style>
+<div style="color:red; font-size:20px;">
+<script language="JavaScript">
+var liczba1=prompt("Podaj pierwszą liczbę");
+var liczba2=prompt("Podaj drugą liczbę");
+if (liczba1==liczba2)
+{
+alert("Brak obliczeń");
+}
+else if (liczba1<liczba2)
+{
+for (var k=liczba1; k<=liczba2; k++)
+{
+if (k%2)
+document.write("<p style=\"font-size:40px; color: green;\"><br>"+k+"<br></p>")
+}
+}
+
+
+
+else if(liczba1>liczba2)
+{
+for (var p=liczba1; p>=liczba2; p--)
+{
+if (p%2)
+document.write("<p style=\"font-size:20px; color: blue;\"><br>"+p+"<br></p>")
+}
+}
+</script>
+</div>
+</body>
+</html>
